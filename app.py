@@ -5,7 +5,7 @@ from requests import get
 
 
 app = Flask(__name__)
-__version__ = 2.5
+__version__ = 3.4
 
 class base:
     status = 'Stopped'
@@ -37,7 +37,7 @@ def keep_alive():
 if __name__ == '__main__':
     Thread(target=lambda: app.run('0.0.0.0')).start()
     Thread(target=keep_alive).start()
-    import avaitor_bot, luckyjet_bot, mines_bot, ads
+    import avaitor_bot, luckyjet_bot, mines_bot  #, ads
     async def run_bots():
         for task in asyncio.as_completed([avaitor_bot.bot_main(), luckyjet_bot.bot_main(), mines_bot.bot_main()]):
             await task

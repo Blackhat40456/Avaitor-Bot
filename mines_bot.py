@@ -1,5 +1,5 @@
 from config import BOT, single_button, send_session_start, send_session_close
-import asyncio, random, time, traceback, sys, ads
+import asyncio, random, time, traceback, sys
 
 
 ID = '@MinesvipsignalsbyReDHaT'
@@ -39,7 +39,6 @@ async def bot_main():
             if allow_run:
                 status = 'Running'
                 await send_session_start(ID)
-                await ads.send_ads(ID)
                 while allow_run:
                     await send_signal()
                 await send_session_close(ID)
