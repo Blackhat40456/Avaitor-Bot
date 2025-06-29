@@ -2,7 +2,7 @@ from config import BOT, single_button, send_session_start, send_session_close
 import asyncio, random, time, traceback, sys
 
 
-ID = '@MinesvipsignalsbyReDHaT'
+ID = '@mines_signalsREDHAT69'
 
 status = 'Stopped'
 allow_run = False
